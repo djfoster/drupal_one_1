@@ -1,0 +1,156 @@
+/*-----------------------------------------------------------------------------
+ *           MENU            
+ *---------------------------------------------------------------------------*/
+.menu--main {
+  float: right;
+  margin-top: 45px;
+  @media #{$phone} { 
+    display: block;
+    margin: 0;
+    position: absolute;
+    right: 0;
+    width: 100%;
+    z-index: 8;
+  }
+}
+
+
+ul.menu,
+.region,
+.views-row {
+  @include clearfix();
+}
+
+.block-menu ul.menu  {
+  display: flex;
+  margin: 0;
+  li {
+    position: relative;
+  }
+}
+
+aside,
+footer {
+  .block-menu ul.menu {
+    display: block;
+
+    a {
+      @include fontSize(16px);
+    }
+  }
+}
+
+@media #{$phone} { 
+  .menu--main {
+    ul.menu {
+      margin-top: 2em;
+    }
+  }
+
+  .navbar-collapse {
+    padding: 0;
+  }
+
+  .block-menu ul.menu {
+    display: block;
+    background: $primaryColor1;
+    margin-left: 0;
+
+    li {
+      border: none;
+      display: block;
+      padding: 0;
+
+      a {
+        border-bottom: 1px solid $primaryColor2;
+        color: $primaryColor3;
+        display: block;
+        padding: 1em 0.75em;
+      }
+    }
+
+    .is-active {
+      background: $primaryColor3;
+      color: $baseColor1;
+    }
+
+    .menu {
+      li {
+        border: none;
+        a {
+          padding-left: 1em;
+
+          &:before {
+            content: '-- ';
+          }
+        }
+      }
+    }
+  }
+}
+
+.menu {
+  .menu {
+    background: $baseColor1;
+    border: 1px solid $baseColor1;
+    display: none !important;
+    margin: 0 !important;
+    min-width: 200px;
+    position: absolute;
+    top: 100%;
+    z-index: 10;
+
+    .menu-item {
+      display: block;
+      float: none;
+      border-bottom: 1px solid $primaryColor1;
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      a {
+        display: block;
+        padding: 0.5em;
+        
+      }
+    }
+  }
+
+  .menu-item {
+    margin: 0;
+
+    a {
+      @include fontSize(20px);
+      padding: 0.5em 0.75em;
+      text-align: left;
+      text-transform: uppercase;
+
+      &:hover {
+      }
+
+      @media #{$tablet} { 
+        @include fontSize(16px);
+      }
+    }
+  }
+}
+
+@media #{$phone} { 
+  .menu .menu {
+    display: block !important;
+    position: relative
+  }
+}
+
+.menu .menu-item:hover .menu {
+    display: block !important;
+}
+
+.navbar-toggle {
+  background-image: url('../img/hamburger_icon.svg');
+  border-radius: 0;
+  min-width: 50px;
+  text-indent: -9999px;
+  width: auto;
+}
