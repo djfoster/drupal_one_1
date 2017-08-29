@@ -1,6 +1,6 @@
 name: MAC Modules
 type: module
-description: 'Module created for classes in MAC Instituto.'
+description: 'Module created for classes in MAC Institute.'
 package: MAC
 dependencies:
   - system
