@@ -25,6 +25,7 @@ class MacExamplesForm extends FormBase {
       '#type' => 'textfield',
       '#title' => 'Ingresa tu nombre',
       '#required' => TRUE,
+      'default_value' =>  'Valor por defecto',
     );
     
     $form['area_de_texto_1'] = array(
