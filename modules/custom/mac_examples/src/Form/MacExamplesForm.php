@@ -49,6 +49,8 @@ class MacExamplesForm extends FormBase {
     $form['fecha_1'] = array(
       '#type' => 'date',
       '#title' => 'Fecha 1',
+      '' => '',
+      '#default_value' => '2017-08-31',
     );
     
     $form['email_1'] = array(
