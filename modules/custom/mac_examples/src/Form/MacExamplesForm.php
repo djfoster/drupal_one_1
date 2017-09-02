@@ -61,6 +61,8 @@ class MacExamplesForm extends FormBase {
     $form['numero_1'] = array(
       '#type' => 'number',
       '#title' => 'Ingresa un número',
+      '#min' => '-20',
+      '#max' => '20',
     );
     
     $form['actions']['#type'] = 'actions';
