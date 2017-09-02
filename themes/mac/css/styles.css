@@ -3,7 +3,7 @@
 float: left;
 margin-right: 1em;
 }
-field--name-field-presley-icon img {
+.field--name-field-presley-icon img {
 padding: 5px;
 max-width: 24px;
 }
@@ -17,5 +17,5 @@ text-align: left;
 }
 .field--name-field-presley-image img {
 background: #FFF;
- }
+}
 
