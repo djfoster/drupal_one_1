@@ -56,6 +56,7 @@ class MacExamplesForm extends FormBase {
     $form['email_1'] = array(
       '#type' => 'email',
       '#title' => 'Ingresa correo electrónico',
+      '#default_value' => 'eliseo_puma@hotmail.com',
     );
     
     $form['numero_1'] = array(
